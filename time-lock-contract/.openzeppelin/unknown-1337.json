@@ -1,0 +1,187 @@
+{
+  "manifestVersion": "3.2",
+  "impls": {
+    "efc4b195dbbb044b834c453aefd2c9c71ab611971677dd775ac8e856fc8ecc6b": {
+      "address": "0x1DC28bAA84052A2Dcd394Ee4069541666C9C9D9d",
+      "txHash": "0xf7b37ac9c001bb3e3167414028fe52bcfa7d8653f9d23e0d97498ec4698a46ed",
+      "layout": {
+        "storage": [
+          {
+            "contract": "TimeLock",
+            "label": "token",
+            "type": "t_contract(IERC20)332",
+            "src": "TimeLock.sol:5"
+          },
+          {
+            "contract": "TimeLock",
+            "label": "lockBoxStructs",
+            "type": "t_array(t_struct(LockBoxStruct)12_storage)dyn_storage",
+            "src": "TimeLock.sol:14"
+          },
+          {
+            "contract": "TimeLock",
+            "label": "etherDeposits",
+            "type": "t_mapping(t_address,t_struct(LockBoxStruct)12_storage)",
+            "src": "TimeLock.sol:16"
+          },
+          {
+            "contract": "TimeLock",
+            "label": "nonEtherToken",
+            "type": "t_mapping(t_address,t_struct(LockBoxStruct)12_storage)",
+            "src": "TimeLock.sol:17"
+          }
+        ],
+        "types": {
+          "t_contract(IERC20)332": {
+            "label": "contract IERC20"
+          },
+          "t_array(t_struct(LockBoxStruct)12_storage)dyn_storage": {
+            "label": "struct TimeLock.LockBoxStruct[]"
+          },
+          "t_struct(LockBoxStruct)12_storage": {
+            "label": "struct TimeLock.LockBoxStruct",
+            "members": [
+              {
+                "label": "beneficiary",
+                "type": "t_address"
+              },
+              {
+                "label": "balance",
+                "type": "t_uint256"
+              },
+              {
+                "label": "releaseTime",
+                "type": "t_uint256"
+              },
+              {
+                "label": "tokenType",
+                "type": "t_string_storage"
+              }
+            ]
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_mapping(t_address,t_struct(LockBoxStruct)12_storage)": {
+            "label": "mapping(address => struct TimeLock.LockBoxStruct)"
+          }
+        }
+      }
+    },
+    "a4803e26ba59caba2a4f6826a8de4c6e26a7ca7a473c3bf9ec86c0286dbc2ef0": {
+      "address": "0x7aF2bEDbFe0e1F12bC6F442b6347df1dD4A6d967",
+      "txHash": "0x487218156c7f542f20475728ba874b205805977733e68dc22f08ce69903b8832",
+      "layout": {
+        "storage": [
+          {
+            "contract": "TimeLock",
+            "label": "token",
+            "type": "t_contract(IERC20)344",
+            "src": "TimeLock.sol:5"
+          },
+          {
+            "contract": "TimeLock",
+            "label": "lockBoxStructs",
+            "type": "t_array(t_struct(LockBoxStruct)12_storage)dyn_storage",
+            "src": "TimeLock.sol:14"
+          },
+          {
+            "contract": "TimeLock",
+            "label": "etherDeposits",
+            "type": "t_mapping(t_address,t_struct(LockBoxStruct)12_storage)",
+            "src": "TimeLock.sol:16"
+          },
+          {
+            "contract": "TimeLock",
+            "label": "nonEtherToken",
+            "type": "t_mapping(t_address,t_struct(LockBoxStruct)12_storage)",
+            "src": "TimeLock.sol:17"
+          }
+        ],
+        "types": {
+          "t_contract(IERC20)344": {
+            "label": "contract IERC20"
+          },
+          "t_array(t_struct(LockBoxStruct)12_storage)dyn_storage": {
+            "label": "struct TimeLock.LockBoxStruct[]"
+          },
+          "t_struct(LockBoxStruct)12_storage": {
+            "label": "struct TimeLock.LockBoxStruct",
+            "members": [
+              {
+                "label": "beneficiary",
+                "type": "t_address"
+              },
+              {
+                "label": "balance",
+                "type": "t_uint256"
+              },
+              {
+                "label": "releaseTime",
+                "type": "t_uint256"
+              },
+              {
+                "label": "tokenType",
+                "type": "t_string_storage"
+              }
+            ]
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_mapping(t_address,t_struct(LockBoxStruct)12_storage)": {
+            "label": "mapping(address => struct TimeLock.LockBoxStruct)"
+          }
+        }
+      }
+    }
+  },
+  "proxies": [
+    {
+      "address": "0xF7675b09933cB99b859CB270f05B755aa72a2AEC",
+      "kind": "transparent",
+      "txHash": "0xb2bab58c545abfbcb93cd976bed31c85f2ab74dde85192cf69642cb3f4fcc9fe"
+    },
+    {
+      "address": "0x7Fe2031DBc82E79620b16D4C80Ff1E472dE1Cd2b",
+      "kind": "transparent",
+      "txHash": "0x2bb4b88384cdb35ad69de976d21cf00a1ea3e4d67371c59e0fcf4dacf78076dd"
+    },
+    {
+      "address": "0xb761196cCd6ECb8D08eF4B59b8719f2348370Ec8",
+      "kind": "transparent",
+      "txHash": "0x57f9d454ee1e59ac8be222c85f54737c4a114713b8883d76a2dda00670172cdd"
+    },
+    {
+      "address": "0xA72102F6c6F9E723F2d001CCbEF41b4C47F18993",
+      "kind": "transparent",
+      "txHash": "0x0b00bc6b7c0a452d0fef2a473ee3ea57dc8698fc9effe020918605594f5ac955"
+    },
+    {
+      "address": "0x83bA25D1F2dfB9A636147E724cD23D659C9a04d6",
+      "kind": "transparent",
+      "txHash": "0x1093f501770d19749efd0c259628fdbbc73328f7735d1683f8339f19643faeed"
+    },
+    {
+      "address": "0x0b24FA7b9BD6cEF19F4d7b6Ce7bC582659876873",
+      "kind": "transparent",
+      "txHash": "0x04c699bab8713caf81e7d3c2d4ee4d611161e9f978f7da88e7f46ad911649a68"
+    }
+  ],
+  "admin": {
+    "address": "0x565a52CB2fB0DCe5b5A71D6A11BbC9B443bF1eBD",
+    "txHash": "0x075d6407a6f4b33df8585a368e5e8350723959b31808600105d5511a18225447"
+  }
+}
