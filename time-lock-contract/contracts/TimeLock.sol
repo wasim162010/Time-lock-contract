@@ -2,6 +2,13 @@
 pragma solidity 0.5.16 ;
 
 contract TimeLock {
+
+  /*
+  NOTE :
+  REASON FOR NOT USING PAYABLE FALLBACK FUNCTION FOR NOT STORING TOKENS IN CONTRACT ACCOUNT, BECAUSE I WANTED TO DIFFERENTIATE BETWEEN THE 
+  ETHER AND OTHER ERC20 TOKEN AND BASED ON IT WANTED TO SAVE SEPARATELY, SO I CREATED  THE  METHOD 'deposit'
+
+  */
     IERC20 token;
 
     struct LockBoxStruct {
@@ -19,9 +26,7 @@ contract TimeLock {
     event LogLockBoxDeposit(address sender, uint amount, uint releaseTime,string  tokenType);   
     event LogLockBoxWithdrawal(address receiver, uint amount,string  tokenType);
 
-    // constructor(address tokenContract) public {
-    //     token = IERC20(tokenContract);
-    // }
+
 
     function initializer(address tokenContract) public {
        token = IERC20(tokenContract);
