@@ -3,9 +3,7 @@ pragma solidity 0.5.16 ;
 import './SafeMath.sol';
 
 
-/**
- * @title Toptal token
- */
+
 
 contract PolyTradeToken{
   using SafeMath for uint256;
@@ -17,7 +15,8 @@ contract PolyTradeToken{
   string public symbol = "PT";
   uint256 public decimals = 18;
     uint256 totalSupply;
-  function ToptalToken() public {
+    
+  constructor() public {
     totalSupply = 1000000 * (10 ** decimals);
     balances[msg.sender] = totalSupply;
   }
@@ -67,11 +66,7 @@ contract PolyTradeToken{
 
   /**
    * @dev Approve the passed address to spend the specified amount of tokens on behalf of msg.sender.
-   *
-   * Beware that changing an allowance with this method brings the risk that someone may use both the old
-   * and the new allowance by unfortunate transaction ordering. One possible solution to mitigate this
-   * race condition is to first reduce the spender's allowance to 0 and set the desired value afterwards:
-   * https://github.com/ethereum/EIPs/issues/20#issuecomment-263524729
+  
    * @param _spender The address which will spend the funds.
    * @param _value The amount of tokens to be spent.
    */
