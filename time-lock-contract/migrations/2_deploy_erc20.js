@@ -1,8 +1,8 @@
 
-const  polyTradeToken= artifacts.require('PolyTradeToken');
+const  TradingToken= artifacts.require('TradingToken');
 
 module.exports = function (deployer) {
-  deployer.deploy(polyTradeToken);
+  deployer.deploy(TradingToken);
 };
 
 /*

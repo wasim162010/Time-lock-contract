@@ -78,15 +78,6 @@ contract TimeLock {
         }
 
         return isSucess ;
-
-        // LockBoxStruct storage l = lockBoxStructs[lockBoxNumber];
-        // require(l.beneficiary == msg.sender);
-        // require(l.releaseTime <= now);
-        // uint amount = l.balance;
-        // l.balance = 0;
-        // emit LogLockBoxWithdrawal(msg.sender, amount, tokenType);
-        // require(token.transfer(msg.sender, amount));
-        // return true;
     }    
 
 }

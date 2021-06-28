@@ -17,11 +17,7 @@
                 console.log("Deposit called");
 
                 var url = '/deposit?amt='+ $('#curVal').val() +'&token=' + selToken
-                    // $.post(url, function (data) {
-                  
-                    //     console.log("")
-                    //  });//
-
+          
                     $.ajax({
                         type: "POST",
                         url: url,
@@ -40,14 +36,6 @@
                 console.log("Deposit called");
                 let selToken = $('#Token :selected').text()
                 var url = '/claim?token=' + selToken
-
-                // $.post('/claim', function (data) {
-                //     console.log("curValue called");
-                //     console.log(data);
-                //     alert(data);
-                    
-                
-                // });//
 
                 $.ajax({
                     type: "POST",
